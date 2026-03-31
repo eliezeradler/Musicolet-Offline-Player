@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="עורך תגיות"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="שם השיר:" android:textColor="#B3B3B3" android:layout_marginBottom="4dp"/>
+    <EditText android:id="@+id/etTitle" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:background="@drawable/dpad_focus_selector" android:padding="12dp" android:layout_marginBottom="16dp" android:singleLine="true" android:focusable="true"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="אמן:" android:textColor="#B3B3B3" android:layout_marginBottom="4dp"/>
+    <EditText android:id="@+id/etArtist" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:background="@drawable/dpad_focus_selector" android:padding="12dp" android:layout_marginBottom="16dp" android:singleLine="true" android:focusable="true"/>
+
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="אלבום:" android:textColor="#B3B3B3" android:layout_marginBottom="4dp"/>
+    <EditText android:id="@+id/etAlbum" android:layout_width="match_parent" android:layout_height="wrap_content" android:textColor="#FFFFFF" android:background="@drawable/dpad_focus_selector" android:padding="12dp" android:layout_marginBottom="32dp" android:singleLine="true" android:focusable="true"/>
+
+    <Button android:id="@+id/btnSaveTags" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="שמור שינויים בקובץ" android:focusable="true" android:background="@drawable/dpad_focus_selector" android:textColor="#FFFFFF" android:padding="16dp" />
+</LinearLayout>
+
+

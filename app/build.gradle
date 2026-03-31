@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+}
+
+android {
+    namespace 'com.example.offlineplayer'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.example.offlineplayer"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    // ספריות בסיסיות של אנדרואיד
+    implementation 'androidx.core:core-ktx:1.12.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.11.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    // ==========================================
+    // התוספים המיוחדים שה-AI ביקש עבור הנגן שלך
+    // ==========================================
+    
+    // Room Database
+    def room_version = "2.6.1"
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.room:room-ktx:$room_version"
+    annotationProcessor "androidx.room:room-compiler:$room_version"
+
+    // Coroutines
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.6.2"
+
+    // Media3 (ExoPlayer)
+    def media3_version = "1.2.1"
+    implementation "androidx.media3:media3-exoplayer:$media3_version"
+    implementation "androidx.media3:media3-session:$media3_version"
+
+    // Glide (לטעינת תמונות אלבום)
+    implementation 'github.com/bumptech/glide:glide:4.16.0'
+    annotationProcessor 'github.com/bumptech/glide:compiler:4.16.0'
+
+    // Jaudiotagger (לעריכת תגיות של שירים)
+    implementation 'net.jthink:jaudiotagger:3.0.1'
+}

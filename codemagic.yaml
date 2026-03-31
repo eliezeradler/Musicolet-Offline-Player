@@ -1,0 +1,12 @@
+workflows:
+  android-workflow:
+    name: Build Offline Player APK
+    environment:
+      java: 17
+    scripts:
+      - name: Generate Gradle Wrapper
+        script: gradle wrapper --gradle-version 8.5
+      - name: Build Debug APK
+        script: ./gradlew assembleDebug
+    artifacts:
+      - app/build/outputs/apk/**/*.apk
