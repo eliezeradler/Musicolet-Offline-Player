@@ -52,8 +52,8 @@ dependencies {
     implementation "androidx.media3:media3-session:$media3_version"
 
     // Glide (לטעינת תמונות אלבום)
-implementation 'com.github.bumptech.glide:glide:4.16.0'
-annotationProcessor 'com.github.bumptech.glide:compiler:4.16.0'
+    implementation 'github.com/bumptech/glide:glide:4.16.0'
+    annotationProcessor 'github.com/bumptech/glide:compiler:4.16.0'
 
     // Jaudiotagger (לעריכת תגיות של שירים)
     implementation 'net.jthink:jaudiotagger:3.0.1'
