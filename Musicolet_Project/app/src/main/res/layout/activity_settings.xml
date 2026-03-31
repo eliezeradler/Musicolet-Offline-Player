@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="הגדרות וכלים"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnScan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="סרוק שירים מהמכשיר"
+        android:focusable="true"
+        android:background="@drawable/dpad_focus_selector"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:id="@+id/btnOpenEqualizer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="אקולייזר (Equalizer)"
+        android:focusable="true"
+        android:background="@drawable/dpad_focus_selector"
+        android:textColor="#FFFFFF"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="טיימר שינה (Sleep Timer):"
+        android:textColor="#B3B3B3"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp" />
+
+    <Button android:id="@+id/btnTimer15" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="עצור בעוד 15 דקות" android:focusable="true" android:background="@drawable/dpad_focus_selector" android:textColor="#FFFFFF" android:padding="16dp" android:layout_marginBottom="8dp" />
+    <Button android:id="@+id/btnTimer30" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="עצור בעוד 30 דקות" android:focusable="true" android:background="@drawable/dpad_focus_selector" android:textColor="#FFFFFF" android:padding="16dp" android:layout_marginBottom="8dp" />
+    
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:layout_marginBottom="8dp">
+        <Button android:id="@+id/btnTimer1Song" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="שיר 1" android:focusable="true" android:background="@drawable/dpad_focus_selector" android:textColor="#FFFFFF" android:layout_marginEnd="4dp" />
+        <Button android:id="@+id/btnTimer3Songs" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="3 שירים" android:focusable="true" android:background="@drawable/dpad_focus_selector" android:textColor="#FFFFFF" android:layout_marginStart="4dp" />
+    </LinearLayout>
+
+    <Button android:id="@+id/btnTimerCancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="בטל טיימר שינה" android:focusable="true" android:background="@drawable/dpad_focus_selector" android:textColor="#FF5252" android:padding="16dp" />
+</LinearLayout>
+
+
